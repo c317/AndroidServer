@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="GasInformationAppS"
+  id="myeclipse.1444563427842"
+  context-root="/GasInformationAppS"
+  j2ee-spec="5.0"
+  archive="GasInformationAppS.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

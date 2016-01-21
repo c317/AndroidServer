@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<package name="home" extends="json-default" namespace="/home">
+		<action name="getNewsListAction" class="com.gasinfo.action.GetNewsListAction"
+			method="getNewsListAction">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="getNewsContentAction" class="com.gasinfo.action.GetNewsListAction"
+			method="getNewsContentAction">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+	<package name="group" extends="json-default" namespace="/group">
+		<action name="getMembersAction" class="com.gasinfo.action.ManageGroupAction"
+			method="getMembersAction">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="getGroupListAction" class="com.gasinfo.action.ManageGroupAction"
+			method="getGroupListAction">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="manageMemberAction" class="com.gasinfo.action.ManageGroupAction"
+			method="manageMemberAction">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+	<package name="work" extends="json-default" namespace="/work">
+	<action name="checkToDoList" class="com.gasinfo.action.WorkAction"
+			method="checkToDoList">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="checkHaveDoneList" class="com.gasinfo.action.WorkAction"
+			method="checkHaveDoneList">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="checkOfficeRequestList" class="com.gasinfo.action.WorkAction"
+			method="checkOfficeRequestList">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="checkOfficeReplyList" class="com.gasinfo.action.WorkAction"
+			method="checkOfficeReplyList">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+</struts>    
